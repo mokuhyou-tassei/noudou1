@@ -60,6 +60,9 @@ a {
 .anser--2 {
     font-size: 30px;
     padding: 100px 60px;
+    font-family: "DotGothic16", sans-serif;
+    line-height: 50px;
+
 }
 
 /* index3.html */
@@ -98,6 +101,7 @@ a {
 
 /* index.html5 */
 .anser--5 {
+    font-family: "DotGothic16", sans-serif;
     font-size: 50px;
 }
 
