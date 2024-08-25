@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="body__wrap">
+    <div class="body">
+        <h1 id="title" class="title">[ 目標を可視化しましょう ]</h1>
+
+        <div id="none">
+
+            <!-- <textarea id="goal_text" name="story" rows="" cols="33">目標を入力してね☆</textarea> -->
+
+            <h2 class="question--3">[ ここにあなたの目標を入力してください ]
+            </h2>
+            <textarea id="goal_text" name="story" rows="4" cols="30"></textarea>
+
+
+        </div>
+        <p id="your_goal"></p>
+        <div class="caption__wrap--3">
+            <p class="body__caption--3">[ 決定ボタンを押してください ]</p>
+            <a id="next_btn" class="next_btn">
+                <p>決定</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.next_btn').addEventListener('click', function () {
+            console.log("lll");
+            var goalText = document.getElementById('goal_text').value;
+            console.log(goalText);
+
+            var yourGoal = document.getElementById('your_goal');
+            var none = document.getElementById('none');
+            var title = document.getElementById('title');
+            var nextBtn = document.getElementById('next_btn');
+            yourGoal.innerText = goalText;
+            title.innerText = "[あなたの目標]";
+            none.style.display = "none";
+            nextBtn.addEventListener('click', function () {
+                window.location.href = "index5.html";
+            });
+        });
+
+    </script>
+</body>
+
+
+
+</html>
